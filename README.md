@@ -1,2 +1,2 @@
 # Test-Centre
-Test-Centre | Portfolio
+Test Centre of Excellence
