@@ -3,10 +3,46 @@
   <head>
     <title>Test Centre of Excellence</title>
     <style>
-      /* Add styles for the website here */
+      /* Add global styles for the website here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header, footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+      h1, h2 {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #ccc;
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5em;
+      }
+      nav a {
+        color: #333;
+        text-decoration: none;
+      }
+      main {
+        margin: 0;
+        padding: 0;
+      }
       /* Responsive design */
       @media only screen and (max-width: 600px) {
         /* Styles for screens smaller than 600px */
+        nav {
+          flex-wrap: wrap;
+        }
+        nav a {
+          width: 100%;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -20,17 +56,16 @@
       <a href="#contact">Contact</a>
     </nav>
     <main>
-      <section id="about">
+      <section id="bio">
         <h2>Bio</h2>
         <p>My name is Otman Zemouri and I am a senior consultant in quality engineering and test architect.</p>
         <p>- My expertise:</p>
-        <p>Test Tool Solutions</p>
-        <p>CI/CD Platforms & Frameworks</p>
-        <p>Setting up and supervising POC process</p>
+        <p>Consulting & Develop Test Tool Solutions</p>
+        <p>Setting up & supervising CI/CD Platforms & Frameworks</p>
+        <p>Setting up & supervising POC process</p>
         <p>Test Process Improvement</p>
         <p>Coaching & Training</p>
         <p>Quality Engineering</p>
-        
       </section>
       <section id="projects">
         <h2>Projects</h2>
@@ -39,10 +74,12 @@
           <li>Project 2</li>
           <li>Project 3</li>
         </ul>
+        <button id="view-more-button">View more</button>
       </section>
       <section id="contact">
         <h2>Contact</h2>
         <p>LinkedIn: <a href="https://nl.linkedin.com/in/osman-otman-zemouri-6525bb83">Otman Zemouri</a></p>
+        <button id="send-message-button">Send message</button>
       </section>
     </main>
     <footer>
